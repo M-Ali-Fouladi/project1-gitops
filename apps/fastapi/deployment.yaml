@@ -5,7 +5,7 @@ metadata:
   name: fastapi-app
 
 spec:
-  replicas: 2
+  replicas: 3
 
   selector:
     matchLabels:
@@ -20,7 +20,11 @@ spec:
       containers:
       - name: fastapi-app
 
+<<<<<<< HEAD
         image: ghcr.io/m-ali-fouladi/cloud-api:${{ github.sha }}
+=======
+        image: ghcr.io/m-ali-fouladi/cloud-api:${TAG}
+>>>>>>> 276beeecf437ed3ca6cf8a93741074a52f191033
 
         ports:
         - containerPort: 8000
