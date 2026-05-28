@@ -19,13 +19,9 @@ spec:
     spec:
       containers:
       - name: fastapi-app
-
         image: ghcr.io/m-ali-fouladi/cloud-api:${{ github.sha }}
-        
-
         ports:
         - containerPort: 8000
-
         resources:
           requests:
             memory: "128Mi"
