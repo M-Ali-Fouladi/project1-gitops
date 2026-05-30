@@ -8,8 +8,6 @@ spec:
   ingressClassName: nginx
 
   rules:
-  - host: api.yourdomain.com
-
     http:
       paths:
       - path: /
